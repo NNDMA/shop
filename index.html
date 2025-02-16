@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Product</h1>
+        <p>Awesome product description here.</p>
+        <h2>$67</h2>
+        
+        <!-- PayPal Button -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="nandestevens@gmail.com">
+            <input type="hidden" name="item_name" value="Awesome Product">
+            <input type="hidden" name="amount" value="67">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="return" value="https://yourwebsite.com/success.html">
+            <input type="hidden" name="cancel_return" value="https://yourwebsite.com/cancel.html">
+            <button type="submit" class="paypal-button">Buy Now</button>
+        </form>
+    </div>
+</body>
+</html>
