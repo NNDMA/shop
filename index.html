@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to No Nonsense DMA</title>
+    <!-- Add this inside your products page HTML where you'd like the button to appear -->
+
+    <link rel="stylesheet" href="home.css"> <!-- Link to the homepage CSS -->
+
+    <video autoplay muted loop id="header-footer-video">
+        <source src="your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <img src="logo.png" alt="Logo" class="brand-logo"> <!-- Logo Image -->
+        <h1>Welcome to No Nonsense DMA</h1>
+        <p>Your trusted source for DMA products and services.</p>
+        <a href="products.html" class="shop-now-button">Shop Now</a> <!-- Link to products page -->
+        
+    </header>
+
+    <!-- Information Section -->
+    <div class="info-section">
+        <div class="info-box">
+            <h2>About Us</h2>
+            <p> Goon_Baboon is the the founder of NNDMA the name should say enough he made this server because He was tired of all the big DMA servers and people that are scamming, ripping off, misleading, bamboozling all of the new people that are new to DMA.</p>
+        </div>
+        <div class="info-box">
+            <h2>Contact</h2>
+            <p>Get in touch with us via Discord for support and queries.</p>
+        </div>
+        <div class="info-box">
+            <h2>Why Choose Us?</h2>
+            <p>At NNDMA everyone will get his own personal firmware made with proof! In the proof channel (customers only have access to this channel) i will be uploading every FW ever made (obviously in a way that people cant copy it) by me so that you can check that yours truly is 1 of 1. I also will be recording footage when making your firmware for you to check. .</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 No Nonsense DMA. All rights reserved.</p>
+    </div>
+<!-- Discord Button -->
+<a href="https://discord.com/invite/bYe4F9PVnY" target="_blank" class="discord-button">
+    <img src="discord-logo.png" alt="Discord" class="discord-logo"> 
+</a>
+<!-- YouTube Button -->
+<a href="https://www.youtube.com/@NoNonsenseDMA" target="_blank" class="youtube-button">
+    <img src="youtube-logo.png" alt="YouTube" class="youtube-logo">
+</a>
+
+<script>
+    // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, and Ctrl+U (View Source)
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "F12" || 
+            (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J")) || 
+            (event.ctrlKey && event.key === "U")) {
+            event.preventDefault();
+        }
+    });
+
+    // Disable Right Click (Optional)
+    document.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+    });
+
+    // Prevent DevTools from Opening
+    (function() {
+        const devtools = new Function("debugger");
+        setInterval(devtools, 100);
+    })();
+</script>
+
+</body>
+</html>
